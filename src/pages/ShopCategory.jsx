@@ -4,7 +4,7 @@ import dropdown_icon from '../assets/dropdown_icon.png'
 import Item from '../components/Item'
 
 const ShopCategory = (props) => {
- 
+
   const { all_product } = useContext(ShopContext)
   return (
     <div>
@@ -19,15 +19,15 @@ const ShopCategory = (props) => {
         {all_product.map((item, idx) => {
           if (props.category === item.category) {
             return <Item key={idx} id={item.id} name={item.name} image={item.image} new_price={item.new_price} old_price={item.old_price} />
-          }else{
+          } else {
             return null;
           }
-        }  )}
+        })}
 
       </div>
-<div className='flex justify-center items-center mt-30 mb-30 m-auto w-50 h-12 bg-[#ededed] text-[#787878] text-xl font-medium  rounded-3xl'>
-  Explore More
-</div>
+      <div className='flex justify-center items-center mt-30 mb-30 m-auto w-50 h-12 bg-[#ededed] text-[#787878] text-xl font-medium cursor-pointer  rounded-3xl'>
+        Explore More
+      </div>
     </div>
   )
 }

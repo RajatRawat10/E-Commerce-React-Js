@@ -7,7 +7,7 @@ import whatsapp_icon from '../assets/whatsapp_icon.png'
 
 const Footer = () => {
     return (
-        <div className='flex flex-col items-center  justify-center gap-12'>
+        <div className='flex flex-col items-center justify-center gap-12'>
             <div className='flex item gap-5 '>
                 <img src={footer_logo} alt="" />
                 <p className='text-[#383838] font-bold text-4xl'>ClickNShop</p>
