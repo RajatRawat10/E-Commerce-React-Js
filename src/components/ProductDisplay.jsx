@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import star_icon from '../assets/star_icon.png'
 import star_dull_icon from '../assets/star_dull_icon.png'
+import { ShopContext } from '../context/ShopContext'
 
 const ProductDisplay = (props) => {
     const { product } = props
+    const {addToCart}= useContext(ShopContext)
+
     return (
         <div className='flex mx-35'>
             {/* left  */}
@@ -46,7 +49,8 @@ const ProductDisplay = (props) => {
                         <div className='px-5 py-3 bg-[#fbfbfb] border-[#ebebeb] cursor-pointer border rounded '>XXL</div>
                     </div>
                 </div>
-                <button className='pl-3 pr-3 py-3 w-45 font-semibold text-white bg-[#ff4141] mt-10 border-none outline-0 cursor-pointer '>ADD TO CART</button>
+                <button onClick={() => {
+                  addToCart(product.id)}} className='pl-3 pr-3 py-3 w-45 font-semibold text-white bg-[#ff4141] mt-10 border-none outline-0 cursor-pointer '>ADD TO CART</button>
                 <p className=' mt-2'><span className='font-semibold'>Category : </span>Women , T-Shirt,Crop Top</p>
                 <p><span>Tags : </span>Modern ,Latest</p>
             </div>

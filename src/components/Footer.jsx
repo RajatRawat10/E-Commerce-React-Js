@@ -10,7 +10,7 @@ const Footer = () => {
         <div className='flex flex-col items-center justify-center gap-12'>
             <div className='flex item gap-5 '>
                 <img src={footer_logo} alt="" />
-                <p className='text-[#383838] font-bold text-4xl'>ClickNShop</p>
+                <p className='text-[#383838] items-center flex font-bold text-4xl'>ClickNShop</p>
             </div>
             <ul className='flex list-none gap-12 text-[#252525] text-xl'>
                 <li className='cursor-pointer'>Company</li>
@@ -20,13 +20,13 @@ const Footer = () => {
                 <li className='cursor-pointer'>Contact</li>
             </ul>
             <div className='flex gap-5'>
-                <div className='p-2.5 pb-1.5 bg-[#fbfbfb] border border-[#ebebeb] '>
+                <div className='p-2.5 pb-1.5 bg-[#fbfbfb] border cursor-pointer border-[#ebebeb] '>
                     <img src={instagram_icon} alt="" />
                 </div>
-                <div className='p-2.5 pb-1.5 bg-[#fbfbfb] border border-[#ebebeb]'>
+                <div className='p-2.5 pb-1.5 bg-[#fbfbfb] border cursor-pointer border-[#ebebeb]'>
                     <img src={pintester_icon} alt="" />
                 </div>
-                <div className='p-2.5 pb-1.5 bg-[#fbfbfb] border border-[#ebebeb]'>
+                <div className='p-2.5 pb-1.5 bg-[#fbfbfb] border cursor-pointer border-[#ebebeb]'>
                     <img src={whatsapp_icon} alt="" />
                 </div>
             </div>
