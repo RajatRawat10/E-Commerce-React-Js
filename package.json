@@ -1,12 +1,12 @@
 {
+  "homepage": "https://rajatrawat10.github.io/E-Commerce-React-Js",
   "name": "ecommerce-website-with-react-js",
-  "homepage": "https://rajatrawat10.github.io/E-Commerce-React-Js/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -g dist",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
